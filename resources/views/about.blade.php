@@ -21,6 +21,6 @@
         </style>
     </head>
     <body class="antialiased">
-        <h1 align = 'center'>Welcome to cars project</h1>
+        <h1 align = 'center'>About us</h1>
     </body>
 </html>
