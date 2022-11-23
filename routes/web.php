@@ -17,13 +17,13 @@ use App\Models\Car;
 Route::get('/', function () {
     $name = 'Jovo';
     $age = 26;
-    return view('welcome', compact('name','age'));
+    return view('cars.welcome', compact('name','age'));
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('cars.about');
 });
 
-Route::get('/cars', [CarsController::class , 'index']);
+Route::get('/cars', [CarsController::class , 'index'])->name('all-cars');
 
 Route::get('/cars/{id}', [CarsController::class , 'show'])->name('single-car');
